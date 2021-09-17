@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+contact.html
+cree par :  Whistler Clermont
+Dernière modification : 17-09-2021
+-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +12,7 @@
     <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="./css/pageaccueil.css">
     <link rel="stylesheet" href="./css/pagecontact.css">
-   
+
     <title>Contact</title>
 </head>
 <body>
@@ -27,7 +32,7 @@
                                   aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                                   
                                   <!-- image de mon hamburger -->
-                                  <!--<i class="fas fa-bars"></i>--> 
+                                  <i class="fas fa-bars"></i> 
                                   <i class="fas fa-globe-americas"></i>                </button>
                       
                               <!-- Ce qu'on met ici sera disparu dans le hamburger -->
@@ -166,11 +171,9 @@
                     </div>
                   </div>
                   <div class="form-row">
-                    <div class="col-md-4 mb-3">
+                    <div class="col-lg-12 col-md-12 mb-3">
                       <label for="text">Donnez nous votre opinion:</label>
-                      <textarea  id="texte11" name="texte11" rows="4" cols="40">
-                        "votre opinion"
-                      </textarea>
+                      <input type="text"  class="form-control" id="texte11" name="texte11" required maxlength="60" placeholder="une ligne opinion">
                     </div>
                   </div>
                     <button class="btn btn__bordure btn__bordure--color btn-primary" type="submit">cliquer pour Enregistrer</button>
