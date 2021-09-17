@@ -1,0 +1,35 @@
+.imagecaroussel {
+  width: 100%;
+  height: 10rem;
+}
+
+.cardBordure {
+  border: 5px;
+}
+
+.cardBordure__dimension {
+  width: 50%;
+  height: 30%;
+}
+
+.titre {
+  color: white;
+}
+
+.titre__size {
+  font-size: 1.5rem;
+}
+
+.titre__size--style {
+  font-style: italic;
+}
+
+.imagesize {
+  width: 30rem;
+  height: 9rem;
+}
+
+.image--size {
+  width: 8rem;
+  height: 5rem;
+}/*# sourceMappingURL=pageGES.css.map */

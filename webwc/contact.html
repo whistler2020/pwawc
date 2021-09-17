@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/pageaccueil.css">
+    <link rel="stylesheet" href="./css/pagecontact.css">
+   
+    <title>Contact</title>
+</head>
+<body>
+    <!--menu-->
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                          <nav class="navbar navbar-expand-md navbar-light">
+                              <!-- Ce qu'on met ici ne sera pas dans le hamburger -->
+                              <!--<a class="navbar-brand" href="#">Navbar</a>-->
+                      
+                              <!-- C'Est lui le hamburger' -->
+                              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                  
+                                  <!-- image de mon hamburger -->
+                                  <!--<i class="fas fa-bars"></i>--> 
+                                  <i class="fas fa-globe-americas"></i>                </button>
+                      
+                              <!-- Ce qu'on met ici sera disparu dans le hamburger -->
+                              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                  <div class="navbar-nav mx-auto">
+                                      <a class="nav-item nav-link active" href="index.html"><h4>Accueil</h4><span class="sr-only">(current)</span></a>
+                                      <a class="nav-item nav-link" href="Environnement.html"><h4>Environnement</h4></a>
+                                      <a class="nav-item nav-link" href="Foret.html"><h4>Forest</h4></a>
+                                      <a class="nav-item nav-link" href="GES.html"><h4>GES</h4></a>
+                                      <a class="nav-item nav-link" href="contact.html"><h4>Contact</h4></a>
+                                  </div>
+                              </div>
+                          </nav>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!--premiere section-->
+    <section>
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12 col-md-12 col col-sm-12">
+                <h1>Contact</h1>
+                <h2 class="entete">
+                  Pour nous contacter, il suffit remplir le formulaire approprie.<br>
+                </h2>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!--deuxieme section-->
+    <section>
+      <div class="container-fluid pt-4">
+        <div class="row">
+          <div class="col-lg-10 offset-lg-2 col-md-12 col-sm-12">
+            <!--formulaire-->
+            <div class="card cardSize">
+              <div class="card-body cardSize--color">
+                <form class="for-control" id="formvalider" onsubmit="return valider()">
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label for="Nom">Votre Nom *</label>
+                        <input type="text" class="form-control" id="texte" name="texte" required maxlength="25" placeholder="Nom">
+                        <div class="invalid-feedback">
+                            Le nom est requis. 
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="Prenom">Votre Prenom *</label>
+                      <input type="text" class="form-control" id="texte2" name="texte2" required maxlength="50" placeholder="Prenom">
+                      <div class="invalid-feedback">
+                          Le Prenom est requis. 
+                      </div>
+                    </div>
+                  </div>
+                  <!--sepation premiere ligne-->
+                  <div class="form-row">
+                    <div class="col-md-4  mb-3">
+                      <label for="sexe">Date de naissance *</label>
+                      <input type="date" class="form-control" id="texte3" name="texte3" required 
+                              min="1000-12-31" max="3000-12-31">
+                      <div class="invalid-feedback">
+                        Le date est requise. 
+                      </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                      <label for="sexe">Sexe *</label>
+                      <input type="text" class="form-control" id="texte4" name="texte4" required minlength="1" maxlength="8" placeholder="Sexe">
+                      <div class="invalid-feedback">
+                        Le sexe est requis. 
+                      </div>
+                    </div>
+                  </div>
+                    <!--sepation ligne-->
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="email">Email *</label>
+                      <input type="email" class="form-control" id="texte5" name="texte5" placeholder="nom@exemple.com" 
+                              minlength="1" maxlength="40">
+                      <div class="invalid-feedback">
+                        Le date est requise. 
+                      </div>
+                    </div>
+                                                    
+                    <div class="col-md-4 mb-3">
+                      <label for="adresse">adresse residence*</label>
+                      <input type="text" class="form-control" id="texte6" name="texte6" required  maxlength="25">
+                      <div class="invalid-feedback">
+                        La date est requise. 
+                      </div>
+                    </div>
+                  </div>
+                    <!--sepation ligne-->
+                  <div class="form-row"> 
+                    <div class="col-md-4 mb-3">
+                      <label for="text">Prov/ter.</label>
+                        <select id="texte7" required>
+                            <option></option>
+                            <option value="choix1">Alberta</option>
+                            <option value="choix2">Colombie-Britannique</option>
+                            <option value="choix3">Ile-du Prince-Edouard</option>
+                            <option value="choix4">Manitoba</option>
+                            <option value="choix5">Nouveau-Brunswick</option>
+                            <option value="choix6">Nouvelle-Ecosse</option>
+                            <option value="choix7">Ontario</option>
+                            <option value="choix8">Quebec</option>
+                            <option value="choix9">Saskatchewan</option>
+                            <option value="choix10">Terre-Neuve-et-Labrador</option>
+                            <option value="choix11">Territoire-du-Nord-Ouest</option>
+                            <option value="choix12">Nunavut</option>
+                            <option value="choix13">Yukon</option>
+                        </select>
+                    </div> 
+                    <div class="col-md-4 mb-3">
+                      <label for="text"> Code  Postal </label>
+                      <input type="text"  id="texte8" name="texte8" maxlength="7" placeholder="A1A 1Z1" 
+                      pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" required />
+                    </div>
+                  </div>
+                  <div class="form-row"> 
+                    <div class="col-md-6 mb-3">
+                      <!--code regional-->
+                      <label for="text"> Telephone </labeL> 
+                      <input id="texte9" type="text" size= 2 id="texte9" name="texte9" 
+                      maxlength="3" placeholder="area code" required />
+
+                      <!--numero telephone-->
+                      <labeL for ="texte10"> - </labeL> 
+                      <input type="text" size= 15 id="texte10" name="texte10"
+                      maxlength="8" placeholder="999-9999" pattern="[0-9]{3}-[0-9]{4}" required />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="text">Donnez nous votre opinion:</label>
+                      <textarea  id="texte11" name="texte11" rows="4" cols="40">
+                        "votre opinion"
+                      </textarea>
+                    </div>
+                  </div>
+                    <button class="btn btn__bordure btn__bordure--color btn-primary" type="submit">cliquer pour Enregistrer</button>
+                </form>
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container pt-4">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <marquee class="marquee">
+              <p> Projet Web realise par Whistler Clermont septembre 2021 !!! </p>
+            </marquee>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="js/script2.js"></script>
+
+    <div class="footer">
+        <p class="textfooter">Tout droit reserver Whistler Clermont @2021</p>
+    </div>
+</body>
+</html>

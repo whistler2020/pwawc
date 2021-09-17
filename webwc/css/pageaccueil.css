@@ -1,0 +1,104 @@
+.cardSize {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+.cardSize--color {
+  background-color: grey;
+}
+
+.btn {
+  text-align: center;
+}
+
+.entete {
+  color: white;
+  text-decoration: underline;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.marquee {
+  color: black;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+body {
+  background-image: url("../img/bgimage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  margin: auto;
+}
+
+.texte {
+  text-align: center;
+}
+
+.texte__size {
+  font-size: 1.2rem;
+}
+
+.texte__size--color {
+  color: white;
+}
+
+.texte__size--colorol {
+  color: red;
+}
+
+.textfooter {
+  color: blue;
+  text-align: center;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.card {
+  border-radius: 5%;
+}
+
+.card__size {
+  width: 70%;
+  height: 30%;
+}
+
+.textemarquee {
+  font-style: italic;
+}
+
+.textemarquee__sise {
+  font-size: 2rem;
+}
+
+.textemarquee__size--color {
+  color: red;
+}
+
+.couleurfondmarquee {
+  background-color: black;
+}
+
+h1 {
+  font-size: 3ren;
+  text-align: center;
+  text-decoration: underline;
+  color: blue;
+}
+
+h4 {
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.animationbgsize {
+  width: 70%;
+  height: 30%;
+}
+
+.animationbgsize--color {
+  background-color: white;
+}/*# sourceMappingURL=pageaccueil.css.map */

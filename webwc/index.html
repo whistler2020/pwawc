@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/pageaccueil.css">
+    <link rel="stylesheet" href="./css/pageenvironnement.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <!--Pour l'animation-->
+    <link rel="stylesheet" href="./css/anime.css">
+    
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <title>Accueil</title>
+</head>
+<body>
+    <!--menu-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <nav data-anijs="if: scroll, on: window, do: swing animated, to: footer" class="navbar navbar-expand-md navbar-light">
+                                <!-- Ce qu'on met ici ne sera pas dans le hamburger -->
+                                <!--<a class="navbar-brand" href="#">Navbar</a>-->
+                        
+                                <!-- C'Est lui le hamburger' -->
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                    
+                                    <!-- image de mon hamburger -->
+                                    <!--<i class="fas fa-bars"></i>--> 
+                                    <i class="fas fa-globe-americas"></i>                </button>
+                        
+                                <!-- Ce qu'on met ici sera disparu dans le hamburger -->
+                                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav mx-auto">
+                                        <a class="nav-item nav-link active" href="index.html"><h4>Accueil</h4><span class="sr-only">(current)</span></a>
+                                        <a class="nav-item nav-link" href="Environnement.html"><h4>Environnement</h4></a>
+                                        <a class="nav-item nav-link" href="Foret.html"><h4>Forest</h4></a>
+                                        <a class="nav-item nav-link" href="GES.html"><h4>GES</h4></a>
+                                        <a class="nav-item nav-link" href="contact.html"><h4>Contact</h4></a>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--premiere section-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div > 
+                        <marquee class="textemarquee textemarquee__sise textemarquee__size--color"> 
+                            Sauvons notre planete en luttant contre le Gaz a effet de serre, 
+                            en protegeant l'environnement et combattre la deforestation!!! 
+                        </marquee>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+        <div class="container-fluid texte texte__size texte__size--color">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h1>Bienvenue sur le site web de Whistler</h1><br>
+                    <p> La realisation de ce site rentre dans le cadre d'un projet final <br>
+                    qui met en valeur la protection de notre planete terre de toute sorte de degradation
+                de son environnement </p><br>
+                
+                <p> nous avons fait des recherches qui revelent la necessite de trouver des solutions a court, a moyen et a long terme<br>
+                    en vue d'eviter la catastrophe dans le futur. </p><br>
+
+                <p class="texte__size texte__size--color"> A travers ce site, vous trouverez en developpement un sujet sur:<br>
+                    <ol>
+                        <li class="texte__size texte__size--colorol">
+                            <h3>l'environnement: </h3>
+                        </li>
+                        <li class="texte__size texte__size--colorol">
+                            <h3> gaz a effet de serre: son impact et comment reduire sur effet negatif</h3> 
+                        </li>
+                        <li class="texte__size texte__size--colorol">
+                            <h3> La deforestation de la terre: Quelles sont les raisons ou les causes et comment y remedier</h3>
+                        </li>
+                    </ol>
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--deuxieme section-->
+    <!--debut section animation-->
+    <section>
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2 class="bd"></h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--fin section animation-->
+    <!--troisieme section-->
+    <section>
+        <div class="container pt-3">
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2 offset-3">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <i class="fas fa-radiation-alt"></i>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <i class="fas fa-cloud-sun-rain"></i>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <i class="fas fa-car"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/a46d75ba7a.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="./js/animation.js"></script>
+    
+    <div class="footer pt-4">
+        <p class="textfooter">Tout droit reserver Whistler Clermont @2021</p>
+    </div><br>
+</body>
+</html>

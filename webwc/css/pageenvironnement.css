@@ -1,0 +1,52 @@
+.cardSize {
+  width: 70%;
+  border-radius: 1rem;
+}
+
+.cardSize--color {
+  background-color: grey;
+}
+
+.btn {
+  text-align: center;
+}
+
+.entete {
+  color: white;
+  text-decoration: underline;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.marquee {
+  color: black;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+ul {
+  color: red;
+  font-size: 15px;
+  text-align: left;
+}
+
+li {
+  color: yellow;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.cardtexte {
+  font-style: italic;
+  color: white;
+}
+
+.cardtexte__fond {
+  background-color: black;
+}
+
+.imagesize {
+  width: 150px;
+  height: 150px;
+  background-position-y: center;
+}/*# sourceMappingURL=pageenvironnement.css.map */
