@@ -8,8 +8,7 @@ const FILES_TO_CACHE = [
     "Foret.html",
     "Environnement.html",
     "contact.html",
-    "offline.html",
-    "install.js"
+    "offline.html"
 ];
 
 self.addEventListener('install', (evt) => {
