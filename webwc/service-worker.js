@@ -1,5 +1,5 @@
 //Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v2';
+const CACHE_NAME = 'static-cache-v3';
 
 //Add list of files to cache here.
 const FILES_TO_CACHE = [
@@ -7,7 +7,8 @@ const FILES_TO_CACHE = [
     "GES.html",
     "Foret.html",
     "Environnement.html",
-    "contact.html"
+    "contact.html",
+    "offline.html"
 ];
 
 self.addEventListener('install', (evt) => {
@@ -42,7 +43,19 @@ self.addEventListener('activate', (evt) => {
 self.addEventListener('fetch', (evt) => {
    console.log('[ServiceWorker] Fetch', evt.request.url);
    //Add fetch event handler here.
-
+   if (evt.request.mode !== 'navigate') {
+    // Not a page navigation, bail.
+    return;
+}
+evt.respondWith(
+    fetch(evt.request)
+        .catch(() => {
+            return caches.open(CACHE_NAME)
+                .then((cache) => {
+                return cache.match('hhttps://whistler2020.github.io/pwawc/webwc/offline.html');
+            });
+        })
+    );
 });
 
 // Register service worker.
