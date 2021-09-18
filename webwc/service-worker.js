@@ -52,7 +52,7 @@ evt.respondWith(
         .catch(() => {
             return caches.open(CACHE_NAME)
                 .then((cache) => {
-                return cache.match('hhttps://whistler2020.github.io/pwawc/webwc/offline.html');
+                return cache.match('https://whistler2020.github.io/pwawc/webwc/offline.html');
             });
         })
     );
